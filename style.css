@@ -79,7 +79,7 @@ color: crimson;
     font-size: 37px;
     font-weight: 400;
     margin-left: -3px;
-    margin-top: -70%;
+    margin-top: -40%;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -89,6 +89,18 @@ color: crimson;
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+}
+.home .home-content .text-4{
+    margin-top:40px
+}
+.profile{
+    color:red;
+    margin-bottom: 20px;
+}
+.summary{
+    text-indent:50px;
+    line-height:30px;
+    text-align:justify
 }
 /*all section style*/
 section{
@@ -223,6 +235,7 @@ width: 30%;
 .contact .contact-content .column{
 width: calc(50% -30px);
 }
+.
 .contact .contact-content .text{
  font-size: 20px;
  font-weight: 600;
@@ -394,6 +407,8 @@ display: flex;
         width: 100%;
         margin-bottom: 20px;
     }
+    
+    
 }
 @media (max-width: 690px){
     .max-width{
