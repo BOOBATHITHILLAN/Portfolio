@@ -13,18 +13,19 @@ html{
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
-    margin: auto;
+   
 }
 
 .navbar{
     position: fixed;
     padding: 30px 0;
+    margin-top: 0;
     width: 100%;
     font-family: sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+    background-color: black;  
 }
-.navbar.sticky{
-    padding: 15px 0;
+.navbar.sticky{    
     background: crimson;
 }
 .navbar .max-width{
@@ -102,6 +103,8 @@ color: crimson;
     line-height:30px;
     text-align:justify
 }
+
+
 /*all section style*/
 section{
     padding: 100px 0;
@@ -235,7 +238,7 @@ width: 30%;
 .contact .contact-content .column{
 width: calc(50% -30px);
 }
-.
+
 .contact .contact-content .text{
  font-size: 20px;
  font-weight: 600;
