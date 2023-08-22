@@ -7,7 +7,7 @@ export const ScrollToTop = () => {
 
   useEffect(() => {
     const toggleVisibility = () =>
-      window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
+      window.innerWidth > 500 ? setIsVisible(true) : setIsVisible(false);
 
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
