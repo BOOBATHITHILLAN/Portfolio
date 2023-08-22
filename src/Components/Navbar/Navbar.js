@@ -85,7 +85,7 @@ export const Navbar = () => {
               download='Boobathi_Web_Developer.pdf'
               onClick={toggleNavList}
               className="link link--nav"
-              target="_blank"
+              target="_self"
               rel="noreferrer"
             >
               Resume
