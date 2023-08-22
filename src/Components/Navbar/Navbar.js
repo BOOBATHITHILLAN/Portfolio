@@ -5,6 +5,7 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import Resume from "../../assets/BoobathiThillan_Resume.pdf"
 
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
@@ -80,7 +81,8 @@ export const Navbar = () => {
           </li>
           <li className="nav__list-item">
             <a
-              href="##"
+              href={Resume}
+              download='Boobathi_Web_Developer.pdf'
               onClick={toggleNavList}
               className="link link--nav"
               target="_blank"
