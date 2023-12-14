@@ -86,6 +86,62 @@ export const Projects = () => {
               </div>
             </div>
           </div>
+                         <div
+            className='projects_container'
+            data-aos='fade-right'
+          >
+            <div className='project'>
+              <div className='project_videocontainer'>
+                <div>
+                  <img
+                    src={Expense_Tracker}
+                    alt='Expense_Tracker'
+                  />
+                </div>
+              </div>
+              <div className='project_information'>
+                <h2>Expense_Tracker</h2>
+                <p>
+                 Effortlessly manage your finances and take control of your expenses 
+                 with Expense Tracker Pro, the ultimate solution for tracking and organizing 
+                your spending. This intuitive app is designed to simplify your financial life,
+                providing you with a powerful tool to monitor, analyze, and optimize your budget.
+                </p>
+                <div>
+                  <FaReact />
+                  <SiNodedotjs />
+                  <SiExpress />
+                  <SiMongodb />
+                </div>
+                <div>
+                  <a
+                    href='https://github.com/BOOBATHITHILLAN/ExpenseTracker_FE'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span
+                      type='button'
+                      className='btns onbt onbt'
+                    >
+                      Github
+                    </span>
+                  </a>
+                  <a
+                    href='https://aquamarine-madeleine-336197.netlify.app/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span
+                      type='button'
+                      className='btns onbt onbt'
+                    >
+                      See this Live
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             className='projects_container'
             data-aos='fade-right'
