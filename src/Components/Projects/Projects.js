@@ -4,6 +4,7 @@ import { FaReact} from "react-icons/fa";
 import { SiExpress, SiMongodb, SiNodedotjs } from "react-icons/si";
 import MemoriaConnect from "../../assets/MemoriaConnect.png";
 import UrlShortener from "../../assets/UrlShortener.png";
+import Expense_Tracker from "../../assets/Expense_Tracker.png";
 // import {
 //   SiBlockchaindotcom,
 //   SiHtml5,
