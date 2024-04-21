@@ -1,57 +1,117 @@
-import React from "react";
-import "./Timeline.css";
+import React from 'react';
+import './Timeline.css';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import WorkIcon from "@mui/icons-material/Work";
-import SchoolIcon from "@mui/icons-material/School";
-import StarRateIcon from "@mui/icons-material/StarRate";
-import { ThemeContext } from "../../Context/theme";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import StarRateIcon from '@mui/icons-material/StarRate';
+import { ThemeContext } from '../../Context/theme';
 
 export const Timeline = () => {
   const [{ themename }] = React.useContext(ThemeContext);
   const [linecolor, setlinecolor] = React.useState(
-    themename === "light" ? "#23283e" : "#fcfcfc"
+    themename === 'light' ? '#23283e' : '#fcfcfc'
   );
 
   React.useEffect(() => {
-    if (themename === "dark") {
-      setlinecolor("#fcfcfc");
+    if (themename === 'dark') {
+      setlinecolor('#fcfcfc');
     } else {
-      setlinecolor("#23283e");
+      setlinecolor('#23283e');
     }
   }, [themename]);
   return (
     <>
       <div className='section mainsection'>
-        <h2
-          className='section__title'
-          data-aos='fade-right'
-        >
+        <h2 className='section__title' data-aos='fade-right'>
           My <span className='different'>Timeline 💫</span>
         </h2>
         <VerticalTimeline lineColor={linecolor}>
           <VerticalTimelineElement
-            date={"Mar 2023 - Present"}
+            date={'Sep 2024 - Present'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
               backgroundColor: `var(--clr-bg)`,
               color: `var(--clr-primary)`,
             }}
-            icon={<StarRateIcon/>}
+            icon={<StarRateIcon />}
+          >
+            <h3
+              className='vertical-timeline-element-title'
+              data-aos='fade-right'
+            >
+              Full Stack Developer at Pibase Solution Pvt Ltd
+            </h3>
+            <h4
+              className='vertical-timeline-element-subtitle'
+              data-aos='fade-right'
+            >
+              Chennai (sholinganallur)
+            </h4>
+            <div style={{ textAlign: 'left' }}>
+              <p>
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Front end technologies including React js, Next js,Tailwind
+                css,HTML, CSS, JavaScript,DOM ensuring optimal performance
+              </p>
+              <p>
+                {' '}
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Back end technologies including MongoDB,Node js,Express js,Nest
+                js, Microservices
+              </p>
+              <p>
+                {' '}
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                API Testing with POSTMAN
+              </p>
+              <p>
+                {' '}
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Developed RESTful Api's
+              </p>
+            </div>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            date={'Mar 2023 - Present'}
+            contentStyle={{
+              boxShadow: `var(--shadow)`,
+              border: '3px solid var(--clr-primary)',
+              backgroundColor: `var(--clr-bg)`,
+              textAlign: 'center',
+              color: `var(--clr-fg-alt)`,
+            }}
+            contentArrowStyle={{
+              borderRight: '16px solid  var(--clr-primary)',
+            }}
+            iconStyle={{
+              border: ` 3px solid var(--clr-primary)`,
+              backgroundColor: `var(--clr-bg)`,
+              color: `var(--clr-primary)`,
+            }}
+            icon={<StarRateIcon />}
           >
             <h3
               className='vertical-timeline-element-title'
@@ -64,8 +124,8 @@ export const Timeline = () => {
               data-aos='fade-right'
             >
               Chennai (IITM Research Park)
-            </h4>            
-            <div style={{ textAlign: "left" }}>              
+            </h4>
+            <div style={{ textAlign: 'left' }}>
               <p>
                 <span className='icons'>
                   <ExitToAppIcon />
@@ -74,14 +134,14 @@ export const Timeline = () => {
                 various frameworks such as Bootstrap and React js
               </p>
               <p>
-                {" "}
+                {' '}
                 <span className='icons'>
                   <ExitToAppIcon />
                 </span>
                 Back end technologies including MySQL,MongoDB,Node js,Express js
               </p>
               <p>
-                {" "}
+                {' '}
                 <span className='icons'>
                   <ExitToAppIcon />
                 </span>
@@ -90,23 +150,23 @@ export const Timeline = () => {
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            date={"Nov 2022 - Mar 2023"}
+            date={'Nov 2022 - Mar 2023'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
               backgroundColor: `var(--clr-bg)`,
               color: `var(--clr-primary)`,
             }}
-            icon={<SchoolIcon/>}
+            icon={<SchoolIcon />}
           >
             <h3
               className='vertical-timeline-element-title'
@@ -125,16 +185,16 @@ export const Timeline = () => {
 
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
-            date={"June-2019 - Nov-2022"}
+            date={'June-2019 - Nov-2022'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -159,16 +219,16 @@ export const Timeline = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
-            date={"Dec-2017 - May-2019"}
+            date={'Dec-2017 - May-2019'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -188,21 +248,21 @@ export const Timeline = () => {
               <span className='icons'>
                 <ExitToAppIcon />
               </span>
-              Hosur Steel Industries 
+              Hosur Steel Industries
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
-            date={"May-2017 - Dec-2017"}
+            date={'May-2017 - Dec-2017'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -227,16 +287,16 @@ export const Timeline = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
-            date={"2013 - 2017"}
+            date={'2013 - 2017'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -258,21 +318,21 @@ export const Timeline = () => {
               PSNA College Of Engineering And Technology, Dindigul(TN),
             </h4>
             <p data-aos='fade-right'>
-            Electrical and Electronic's Engineering  with 74.4 Percentage
+              Electrical and Electronic's Engineering with 74.4 Percentage
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
-            date={"2011 - 2013"}
+            date={'2011 - 2013'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -299,16 +359,16 @@ export const Timeline = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
-            date={"2010-2011"}
+            date={'2010-2011'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
