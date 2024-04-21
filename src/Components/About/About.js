@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Resume from "../../assets/BoobathiThillan_Resume.pdf"
+import Resume from "../../assets/BoobathiThillanResume-1.pdf"
 import { Type } from "./Type";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -63,7 +63,7 @@ export const About = () => {
         </div>
         <a
           href={Resume}
-          download='Boobathi_Web_Developer.pdf'
+          download='Boobathi_Full_Stack_Web_Developer.pdf'
         >
           <button className='btnResume'>Get Resume</button>
         </a>
