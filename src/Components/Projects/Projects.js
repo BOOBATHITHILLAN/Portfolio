@@ -3,8 +3,10 @@ import './Projects.css';
 import { FaReact } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiNodedotjs } from 'react-icons/si';
 import MemoriaConnect from '../../assets/MemoriaConnect.png';
+import UrlShortener from '../../assets/UrlShortener.png';
 import Expense_Tracker from '../../assets/Expense_Tracker.png';
 import Form_Converter from '../../assets/Form_Converter.png';
+import Train_Booking from '../../assets/Train_Booking.png';
 
 // import {
 //   SiBlockchaindotcom,
@@ -27,7 +29,10 @@ export const Projects = () => {
   return (
     <>
       <div className='section'>
-        <h2 className='section__title different'> Recent Full Stack Projects</h2>
+        <h2 className='section__title different'>
+          {' '}
+          Recent Full Stack Projects
+        </h2>
         <div className='allProjects'>
           <div className='projects_container' data-aos='fade-right'>
             <div className='project'>
@@ -184,6 +189,61 @@ export const Projects = () => {
                   </a>
                   <a
                     href='https://serene-platypus-af3f01.netlify.app/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span type='button' className='btns onbt'>
+                      See this Live
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='projects_container' data-aos='fade-right'>
+            <div className='project'>
+              <div className='project_videocontainer'>
+                <div>
+                  <img src={Train_Booking} alt='Form_Converter' />
+                </div>
+              </div>
+              <div className='project_information'>
+                <h2>TrainBookingApp</h2>
+                <p>
+                  The app facilitates the booking and management of train
+                  tickets for various routes. It should provide functionalities
+                  for users to create accounts, search train schedules, book
+                  tickets, and view their past bookings. The stacks used in this
+                  applications, Frontend: HTML5, CSS3, Javascript, React,
+                  Backend: Nodejs, Expressjs, MongoDB
+                </p>
+                <div>
+                  <FaReact />
+                  <SiNodedotjs />
+                  <SiExpress />
+                  <SiMongodb />
+                </div>
+                <div>
+                  <a
+                    href='https://github.com/BOOBATHITHILLAN/Railway_FE'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span type='button' className='btns onbt'>
+                      Github FE
+                    </span>
+                  </a>
+                  <a
+                    href='https://github.com/BOOBATHITHILLAN/Railway_BE'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span type='button' className='btns onbt'>
+                      Github BE
+                    </span>
+                  </a>
+                  <a
+                    href='https://main--transcendent-semolina-83d0f3.netlify.app/'
                     target='_blank'
                     rel='noreferrer'
                   >
