@@ -5,7 +5,7 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Resume from "../../assets/BoobathiThillan_Resume.pdf"
+// import Resume from "../../assets/BoobathiThillanResume.pdf"
 
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
@@ -81,11 +81,11 @@ export const Navbar = () => {
           </li>
           <li className="nav__list-item">
             <a
-              href={Resume}
-              download='Boobathi_Web_Developer.pdf'
-              onClick={toggleNavList}
+              href={'https://app.enhancv.com/share/eb671059/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
+              // download='Boobathi_Web_Developer.pdf'
+              // onClick={toggleNavList}
               className="link link--nav"
-              target="_self"
+              target="_blank"
               rel="noreferrer"
             >
               Resume
