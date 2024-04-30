@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import Resume from "../../assets/BoobathiThillanResume-1.pdf"
 import { Type } from "./Type";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -62,8 +61,9 @@ export const About = () => {
 
         </div>
         <a
-          href={Resume}
-          download='Boobathi_Full_Stack_Web_Developer.pdf'
+          href={'https://app.enhancv.com/share/eb671059/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
+          // download='Boobathi_Full_Stack_Web_Developer.pdf'
+          target="_blank"
         >
           <button className='btnResume'>Get Resume</button>
         </a>
