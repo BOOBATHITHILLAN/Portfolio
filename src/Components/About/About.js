@@ -65,7 +65,7 @@ export const About = () => {
           // download='Boobathi_Full_Stack_Web_Developer.pdf'
           target="_blank"
         >
-          <button className='btnResume'>Get Resume</button>
+          <button className='btn'>Get Resume</button>
         </a>
       </div>
       <Introduction />
