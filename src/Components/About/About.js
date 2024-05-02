@@ -64,8 +64,9 @@ export const About = () => {
           href={'https://app.enhancv.com/share/eb671059/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
           // download='Boobathi_Full_Stack_Web_Developer.pdf'
           target="_blank"
+            rel="noreferrer"
         >
-          <button className='btn'>Get Resume</button>
+          <button className='btnResume'>Get Resume</button>
         </a>
       </div>
       <Introduction />
