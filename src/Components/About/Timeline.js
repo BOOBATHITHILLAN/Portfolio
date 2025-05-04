@@ -31,8 +31,82 @@ export const Timeline = () => {
           My <span className='different'>Timeline 💫</span>
         </h2>
         <VerticalTimeline lineColor={linecolor}>
+        <VerticalTimelineElement
+            date={'July 2024 - Till now'}
+            contentStyle={{
+              boxShadow: `var(--shadow)`,
+              border: '3px solid var(--clr-primary)',
+              backgroundColor: `var(--clr-bg)`,
+              textAlign: 'center',
+              color: `var(--clr-fg-alt)`,
+            }}
+            contentArrowStyle={{
+              borderRight: '16px solid  var(--clr-primary)',
+            }}
+            iconStyle={{
+              border: ` 3px solid var(--clr-primary)`,
+              backgroundColor: `var(--clr-bg)`,
+              color: `var(--clr-primary)`,
+            }}
+            icon={<StarRateIcon />}
+          >
+            <h3
+              className='vertical-timeline-element-title'
+              data-aos='fade-right'
+            >
+              Full Stack Developer at Website Learners Pvt Ltd
+            </h3>
+            <h4
+              className='vertical-timeline-element-subtitle'
+              data-aos='fade-right'
+            >
+              Chennai (T.Nagar)
+            </h4>
+            <div style={{ textAlign: 'left' }}>
+              <p>
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Front end technologies including React js, Next js,Tailwind
+                css,HTML, CSS, JavaScript,DOM ensuring optimal performance
+              </p>
+              <p>
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Back end technologies including MongoDB,Node js,Express js
+              </p>
+              <p>
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                AI Integration and prompt optimize - Chatgpt, Claude, Gemini and Deep seek 
+              </p>
+              <p>
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Developed internal projects and  integrations 
+                (Slack, Mailer lite, Hubspot and Pipedream)
+              </p>
+              <p>
+                {' '}
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                API Testing with POSTMAN
+              </p>
+              <p>
+                {' '}
+                <span className='icons'>
+                  <ExitToAppIcon />
+                </span>
+                Developed RESTful Api's
+              </p>
+            </div>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
-            date={'Sep 2024 - Present'}
+            date={'Sep 2023 - July 2024'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               border: '3px solid var(--clr-primary)',
