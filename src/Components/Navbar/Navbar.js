@@ -81,7 +81,7 @@ export const Navbar = () => {
           </li>
           <li className="nav__list-item">
             <a
-              href={'https://app.enhancv.com/share/eb671059/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
+              href={'https://app.enhancv.com/share/26b007f9/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
               // download='Boobathi_Web_Developer.pdf'
               // onClick={toggleNavList}
               className="link link--nav"
