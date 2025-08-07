@@ -61,7 +61,7 @@ export const About = () => {
 
         </div>
         <a
-          href={'https://app.enhancv.com/share/eb671059/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
+          href={'https://app.enhancv.com/share/26b007f9/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic'}
           // download='Boobathi_Full_Stack_Web_Developer.pdf'
           target="_blank"
             rel="noreferrer"
